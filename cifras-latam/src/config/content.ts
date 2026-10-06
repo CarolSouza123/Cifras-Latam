@@ -4,19 +4,19 @@ export type ProductItem = MediaItem & { eyebrow: string; title: string; descript
 export const pageContent = {
   urgencyBar: {
     enabled: true,
-    text: 'Acesso imediato e vitalício para aprender no seu ritmo.',
+    text: '⚡ ATENCIÓN: De $27,00 por solo $4,90 ASEGURANDO DENTRO DE LOS PRÓXIMOS MINUTOS ⚡',
   },
   hero: {
     image: '',
     imageAlt: 'Imagem da Hero',
-    headline: 'O segredo que os mágicos escondem finalmente foi revelado.',
-    body: 'Aprenda truques simples, rápidos e surpreendentes que parecem impossíveis para quem está assistindo.',
-    ctaLabel: 'Quero aprender agora',
+    headline: 'Nunca mais se sinta inútil no louvor: Aprenda a tocar mais de 300 músicas gospel no violão, com cifras simplificadas para iniciantes.',
+    body: 'Chega de dificuldades para tocar na igreja, nos cultos ou em casa. Um método simples para cristãos que querem começar a tocar louvores diferentes em alguns dias, mesmo que achem que não tem talento.',
+    ctaLabel: 'Quero os louvores agora',
     securityImage: '/images/selos-seguranca-compra.svg',
     securityImageAlt: 'Selos de compra segura, satisfação garantida e privacidade protegida',
   },
   results: {
-    title: 'Imagine ter um baralho na mão e deixar todo mundo tentando descobrir o segredo. Veja as reações de quem já aprendeu.',
+    title: 'Imagine poder lembrar de um louvor, abrir a Colección Suprema de Cifras Gospel e começar a tocar. Veja o que os cristãos dizem',
     items: Array.from({ length: 6 }, (_, index) => ({
       src: '',
       alt: `Placeholder: Depoimento ${String(index + 1).padStart(2, '0')}`,
