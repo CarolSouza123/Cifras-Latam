@@ -88,19 +88,6 @@ function Carousel() {
   </div>
 }
 
-function Modules() {
-  const [open, setOpen] = useState<number[]>([])
-  const toggle = (index: number) => setOpen(old => old.includes(index) ? old.filter(item => item !== index) : [...old, index])
-  return <div className="card-grid">{pageContent.modules.map((item, index) => {
-    const expanded = open.includes(index)
-    return <article className="content-card" key={item.eyebrow}>
-      <div className="square-media">{placeholder(item)}</div><span className="eyebrow">{item.eyebrow}</span><h3>{item.title}</h3>
-      <button className="accordion-trigger" onClick={() => toggle(index)} aria-expanded={expanded} aria-controls={`module-${index}`}><span>Clique aqui</span>{expanded ? <Minus /> : <Plus />}</button>
-      <div className="accordion-panel" id={`module-${index}`} hidden={!expanded}><p>{item.description}</p></div>
-    </article>
-  })}</div>
-}
-
 function UpgradeModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   const dialog = useRef<HTMLDivElement>(null)
   const closeButton = useRef<HTMLButtonElement>(null)
@@ -168,7 +155,6 @@ function App() {
     <main>
       <section className="hero"><div className="container hero-inner"><div className="hero-media">{placeholder({ src: pageContent.hero.image, alt: pageContent.hero.imageAlt, label: 'Imagem da Hero', ratio: '3:2' }, true)}</div><h1>{pageContent.hero.headline}</h1><p className="lead">{pageContent.hero.body}</p><div className="hero-action"><Button onClick={() => document.getElementById('ofertas')?.scrollIntoView({ behavior: 'smooth' })}>{pageContent.hero.ctaLabel}</Button><img src={pageContent.hero.securityImage} alt={pageContent.hero.securityImageAlt} /></div></div></section>
       <section className="section section-muted"><div className="container"><h2>{pageContent.results.title}</h2><Carousel /></div></section>
-      <section className="section"><div className="container"><h2>{pageContent.modulesSection.title}</h2><Modules /></div></section>
       <section className="section section-muted"><div className="container"><h2>{pageContent.bonusesSection.title}</h2><div className="card-grid">{pageContent.bonuses.map(item => <article className="content-card bonus" key={item.eyebrow}><div className="square-media">{placeholder(item)}</div><span className="eyebrow">🎁 {item.eyebrow}: incluso na oferta completa</span><h3>{item.title}</h3><p>{item.description}</p>{item.value && <s>{item.value}</s>}</article>)}</div></div></section>
       <section className="section" id="ofertas"><div className="container"><h2>{pageContent.offersSection.title}</h2><div className="offers">
         <article className="offer-card"><h3>{pageContent.offers.simple.title}</h3><FeatureList items={pageContent.offers.simple.items} /><Price data={pageContent.offers.simple} /><div className="offer-action"><Button kind="secondary" onClick={() => setModalOpen(true)}>{pageContent.offers.simple.ctaLabel}</Button><img src={pageContent.offersSection.paymentSecurityImage} alt={pageContent.offersSection.paymentSecurityAlt} loading="lazy" /></div></article>

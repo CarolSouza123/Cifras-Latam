@@ -24,12 +24,6 @@ export const pageContent = {
       ratio: '2:3' as const,
     })),
   },
-  modulesSection: { title: '3 módulos para você aprender 7 mágicas com cartas' },
-  modules: [
-    { src: '', alt: 'Imagem do módulo 01', label: 'Imagem do módulo 01', ratio: '1:1' as const, eyebrow: 'Módulo 01', title: 'Fundamentos do Baralho', description: 'Movimentos básicos, controle das cartas, posicionamento das mãos e prática.' },
-    { src: '', alt: 'Imagem do módulo 02', label: 'Imagem do módulo 02', ratio: '1:1' as const, eyebrow: 'Módulo 02', title: '4 mágicas que parecem impossíveis', description: 'Carta Impossível, Carta Predita, Carta Viajante e Carta no Celular.' },
-    { src: '', alt: 'Imagem do módulo 03', label: 'Imagem do módulo 03', ratio: '1:1' as const, eyebrow: 'Módulo 03', title: '3 mágicas de impacto', description: 'Carta Escolhida, Baralho Sob Controle e O Final Impossível.' },
-  ],
   bonusesSection: { title: 'E para deixar sua experiência ainda mais completa, você ainda recebe 2 bônus' },
   bonuses: [
     { src: '', alt: 'Imagem do bônus 01', label: 'Imagem do bônus 01', ratio: '1:1' as const, eyebrow: 'Bônus 01', title: 'Dicionário de Acordes', description: 'Tenha os principais acordes do violão organizados para consultar sempre que precisar.', value: 'R$ 27,00' },
