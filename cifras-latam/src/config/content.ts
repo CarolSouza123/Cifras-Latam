@@ -75,5 +75,5 @@ export const pageContent = {
     { question: 'Por quanto tempo posso acessar?', answer: 'Acesso vitalício.' },
     { question: 'E se eu comprar e não gostar?', answer: 'Você tem 7 dias de garantia. Se perceber que o material não é para você, poderá solicitar o reembolso dentro do prazo.' },
   ],
-  footer: { brand: 'Marcelo Black', copyright: '© 2026 Marcelo Black' },
+  footer: { brand: 'Colección Suprema', copyright: '© 2026 Colección Suprema' },
 }
