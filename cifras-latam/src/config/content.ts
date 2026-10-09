@@ -24,10 +24,11 @@ export const pageContent = {
       ratio: '2:3' as const,
     })),
   },
-  bonusesSection: { title: 'E para deixar sua experiência ainda mais completa, você ainda recebe 2 bônus' },
+  bonusesSection: { title: 'E para deixar sua experiência ainda mais completa, você ainda recebe 3 bônus' },
   bonuses: [
-    { src: '', alt: 'Imagem do bônus 01', label: 'Imagem do bônus 01', ratio: '1:1' as const, eyebrow: 'Bônus 01', title: 'Dicionário de Acordes', description: 'Tenha os principais acordes do violão organizados para consultar sempre que precisar.', value: 'R$ 27,00' },
-    { src: '', alt: 'Imagem do bônus 02', label: 'Imagem do bônus 02', ratio: '1:1' as const, eyebrow: 'Bônus 02', title: 'Conhecendo seu Violão', description: 'Aprenda os fundamentos do violão e entenda melhor o instrumento antes de começar a praticar.', value: 'R$ 37,00' },
+    { src: '', alt: 'Imagem do bônus 01', label: 'Imagem do bônus 01', ratio: '1:1' as const, eyebrow: 'Bônus 01', title: 'Colección Suprema — +1.000 Cifras Gospel', description: 'Tenha acesso a uma coleção completa com mais de 1.000 cifras de louvores gospel para encontrar novos louvores e ampliar seu repertório no violão.', value: 'R$ 47,00' },
+    { src: '', alt: 'Imagem do bônus 02', label: 'Imagem do bônus 02', ratio: '1:1' as const, eyebrow: 'Bônus 02', title: 'Dicionário de Acordes', description: 'Consulte os principais acordes do violão de forma simples sempre que encontrar um acorde que ainda não conhece.', value: 'R$ 27,00' },
+    { src: '', alt: 'Imagem do bônus 03', label: 'Imagem do bônus 03', ratio: '1:1' as const, eyebrow: 'Bônus 03', title: 'Conhecendo seu Violão', description: 'Aprenda os fundamentos do instrumento e entenda melhor o braço, as cordas e os principais elementos do violão antes de começar a praticar.', value: 'R$ 37,00' },
   ],
   offersSection: {
     title: 'Agora você tem duas formas de começar',
